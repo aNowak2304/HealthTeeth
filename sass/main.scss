@@ -1,0 +1,211 @@
+@import './colors';
+@import './components';
+@import './mixins';
+@import './animations';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+} 
+
+.hamburger{
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    color: #fff;
+    z-index: 1500;
+}
+
+.nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $nav-color;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(202%);
+        transition: transform 1s;
+
+        &--active {
+            transform: translateX(0);
+        }
+
+        &__link{
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            font-size: 3.2rem;
+            margin: 0.3em;
+            letter-spacing: 3px;
+        }
+        
+        &__link,
+        &__link::after,
+        &__link::before {
+            transition: .3s;
+        }
+        
+        &__link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: -1;
+        }
+        
+        &__link:hover {
+            color: #000;
+        }
+        
+        &__link:hover::after {
+            height: 100%;
+        }
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img{
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../img/header-mini.jpg');
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: bold;
+
+        &-brand{
+            font-family: 'Caveat', cursive;
+            font-size: 4.8rem;
+            letter-spacing: 1px;
+        }
+
+        i{
+            font-size: 4rem;
+        }
+
+        &-note{
+            text-align: center;
+            padding: 0.5em 2em;
+        }
+    }
+
+    .shadow{
+        height: 100%;
+        width: 100%;
+        background-color: $main-shadow;
+    }
+}
+
+.service{
+    &__one{
+        background-image: url('../img/servicesimg/dentist-g795f97984_640.jpg');
+    }
+
+    &__two{
+        background-image: url('../img/servicesimg/doctor-gaba6661da_640.jpg');
+    }
+
+    &__three{
+        background-image: url('../img/servicesimg/orthodontist-gc3f3f1f2f_640.jpg');
+    }
+
+    &__four{
+        background-image: url('../img/servicesimg/mouth-g4033092d4_640.jpg');
+    }
+
+    &__card{
+        background-size: cover;
+        padding: 4em 0 0;
+        margin: 1em;
+        border-radius: 15px;
+        overflow: hidden;
+
+        &-content{
+            padding: 1em;
+            background-color: rgba(0,0,0, 0.35);
+
+            &-title{
+            position: relative;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin: 0.5em;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            }
+
+            &-title::after{
+            content: "";
+            position: absolute;
+            height: 4px;
+            margin-left: -1.2em;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: $main-color;
+            }
+
+            &-body{
+                color: rgb(228, 215, 215);
+            }
+
+            &-btn{
+                font-size: 1.4rem;
+                margin: 1rem 0;
+            }
+
+        }
+
+        &-body{
+            color: rgb(228, 215, 215);
+        }
+
+        &-btn{
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+
+    }
+}
+
+
+
+
+
+@import './small';
+@import './medium';
+@import './large';
+@import './extralarge';

@@ -1,0 +1,43 @@
+@media (min-width: 768px){
+    .header{
+        &__text{
+            font-size: 3rem;
+            i{
+                font-size: 6rem;
+            }
+            &-brand{
+                font-size: 8rem;
+            }
+
+            .btn{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .service{
+        display: flex;
+        justify-content: space-between;
+        &__card{
+            margin: 2em;
+            width: 40%;
+            padding: 7em 0 0;
+
+            &-content{
+
+                &-title{
+                    font-size: 2.8rem;
+                }
+
+                &-body{
+                    font-size: 2rem;
+                }
+
+                &-btn{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+    }
+}

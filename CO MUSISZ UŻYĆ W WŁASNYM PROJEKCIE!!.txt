@@ -1,0 +1,18 @@
+1. Margin auto
+2. before, after
+3. grid
+4. animation
+5. hamburgera z githuba
+6. bema
+7. mixiny
+
+* slick.js
+* te nowe ikonki
+* dużo róznych plików sass
+* js
+* white blocki
+
+*po kliknieciu w przycisk w headerze przesuwa cie na dana sekcje
+letter spaceing na h1
+*hover na mobile
+

@@ -1,0 +1,94 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    margin: 1em;
+    padding: 0.5em 1em;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.5em;
+    color: $main-color;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 20;
+    letter-spacing: 1px;
+}
+
+.btn::before,
+.btn::after {
+    display: block;
+    position: absolute;
+    content: '';
+    transition: all .5s;
+    z-index: -1;
+}
+
+.btn-animation::after,
+.btn-animation::before {
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+}
+
+.btn-animation:hover{
+    color: #fff;
+}
+
+.btn-animation{
+    transition: color .5s;
+    }
+
+.btn-animation::before {
+    top: -50%;
+    left: -100%;
+}
+
+.btn-animation::after {
+    bottom: -50%;
+    right: -100%;
+}
+
+.btn-animation:hover::before {
+    left: 0;
+}
+
+.btn-animation:hover::after {
+    right: 0;
+}
+
+.section-heading{
+    text-align: center;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: $main-color;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 576px){
+    .section-heading{
+        font-size: 3.5rem;
+    }
+}
+@media (min-width: 768px){
+    .section-heading{
+        font-size: 4.5rem;
+        margin: 3rem;
+    }
+}
+@media (min-width: 1200px){
+    .section-heading{
+        font-size: 5.5rem;
+        margin: 4rem;
+    }
+}
+
+
+
