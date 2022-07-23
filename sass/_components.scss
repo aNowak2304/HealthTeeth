@@ -2,6 +2,8 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -64,9 +66,9 @@
 
 .section-heading{
     text-align: center;
-    margin: 2rem;
+    padding-top: 2rem;
     text-transform: uppercase;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: $main-color;
     font-weight: 400;
     letter-spacing: 1px;
@@ -80,13 +82,21 @@
 @media (min-width: 768px){
     .section-heading{
         font-size: 4.5rem;
-        margin: 3rem;
+        padding-top: 3rem;
     }
+.services{
+    .wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
 }
 @media (min-width: 1200px){
     .section-heading{
         font-size: 5.5rem;
-        margin: 4rem;
+        padding-top: 4rem;
     }
 }
 

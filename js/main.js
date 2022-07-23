@@ -1,5 +1,6 @@
 const nav = document.querySelector('.nav');
 const navBtn = document.querySelector('.hamburger');
+const footerYear = document.querySelector('.footer__year');
 const allNavLinks = document.querySelectorAll('.nav__link');
 
 const handleNav = () => {
@@ -8,9 +9,15 @@ const handleNav = () => {
 
     allNavLinks.forEach(link => {
         link.addEventListener('click', () =>{
-            navMobile.classList.remove('nav--active')
+            nav.classList.remove('nav--active')
         })
     })
 }
 
 navBtn.addEventListener('click', handleNav);
+
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+handleCurrentYear();

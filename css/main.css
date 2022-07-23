@@ -2,6 +2,13 @@
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn {
@@ -66,9 +73,9 @@
 
 .section-heading {
   text-align: center;
-  margin: 2rem;
+  padding-top: 2rem;
   text-transform: uppercase;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: #0f57c4;
   font-weight: 400;
   letter-spacing: 1px;
@@ -83,14 +90,25 @@
 @media (min-width: 768px) {
   .section-heading {
     font-size: 4.5rem;
-    margin: 3rem;
+    padding-top: 3rem;
+  }
+  .services .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
 @media (min-width: 1200px) {
   .section-heading {
     font-size: 5.5rem;
-    margin: 4rem;
+    padding-top: 4rem;
   }
 }
 
@@ -140,8 +158,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateX(202%);
-          transform: translateX(202%);
+  -webkit-transform: translateX(102%);
+          transform: translateX(102%);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -248,36 +266,48 @@ body {
   background-color: rgba(19, 99, 223, 0.85);
 }
 
-.service__one {
+.services {
+  padding-bottom: 2em;
+}
+
+.services__one {
   background-image: url("../img/servicesimg/dentist-g795f97984_640.jpg");
 }
 
-.service__two {
+.services__two {
   background-image: url("../img/servicesimg/doctor-gaba6661da_640.jpg");
 }
 
-.service__three {
+.services__two-title::after {
+  background-color: #008278;
+}
+
+.services__three {
   background-image: url("../img/servicesimg/orthodontist-gc3f3f1f2f_640.jpg");
 }
 
-.service__four {
+.services__four {
   background-image: url("../img/servicesimg/mouth-g4033092d4_640.jpg");
 }
 
-.service__card {
+.services__card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   background-size: cover;
   padding: 4em 0 0;
   margin: 1em;
   border-radius: 15px;
   overflow: hidden;
+  width: auto;
+  height: 100%;
 }
 
-.service__card-content {
+.services__card-content {
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.service__card-content-title {
+.services__card-content-title {
   position: relative;
   font-size: 2.2rem;
   letter-spacing: 1px;
@@ -287,7 +317,7 @@ body {
   text-align: center;
 }
 
-.service__card-content-title::after {
+.services__card-content-title::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -298,22 +328,437 @@ body {
   background-color: #0f57c4;
 }
 
-.service__card-content-body {
+.services__card-content-body {
   color: #e4d7d7;
 }
 
-.service__card-content-btn {
+.services__card-content-btn {
   font-size: 1.4rem;
   margin: 1rem 0;
 }
 
-.service__card-body {
+.services__card-content .title-even::after {
+  background-color: #008278;
+}
+
+.services__card-content .btn-even {
+  color: #008278;
+}
+
+.services__card-content .btn-even:hover {
+  color: white;
+}
+
+.services__card-content .btn-even::after,
+.services__card-content .btn-even::before {
+  background-color: #008278;
+}
+
+.services__card-body {
   color: #e4d7d7;
 }
 
-.service__card-btn {
+.services__card-btn {
   font-size: 1.4rem;
   margin: 1rem 0;
+}
+
+.aboutus {
+  padding-bottom: 2em;
+  background-image: linear-gradient(315deg, rgba(6, 188, 251, 0.7) 0%, #4884ee 74%, rgba(6, 188, 251, 0.7));
+  color: white;
+}
+
+.aboutus .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutus__icon-box {
+  margin: 1em;
+  text-align: center;
+}
+
+.aboutus__icon-box i {
+  margin: 0.5em;
+  font-size: 3.5rem;
+}
+
+.aboutus__icon-box h5 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.team {
+  padding-bottom: 1em;
+  background-color: #efefef;
+}
+
+.team__box {
+  background-color: #fff;
+  position: relative;
+  margin: 1em;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.team__box-head {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.team__box-head-img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.3em;
+  border: 5px solid #0f57c4;
+}
+
+.team__box-content {
+  border-top-right-radius: 20px;
+}
+
+.team__box-content-title {
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  letter-spacing: 1px;
+}
+
+.team__box-content-text {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #0f57c4;
+  font-size: 1.8rem;
+}
+
+.team__box-content-icons {
+  cursor: pointer;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 4rem;
+  color: #0f57c4;
+}
+
+.team__box-content .fa-instagram, .team__box-content .fa-facebook-square, .team__box-content .fa-linkedin {
+  -webkit-transition: color 0.5s, -webkit-transform 0.5s;
+  transition: color 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s;
+}
+
+.team__box-content .fa-instagram:hover, .team__box-content .fa-facebook-square:hover, .team__box-content .fa-linkedin:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgba(19, 99, 223, 0.85);
+}
+
+.pricelist__card {
+  position: relative;
+  margin: 1em;
+  height: 600px;
+  color: white;
+  text-align: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.pricelist__card:hover .pricelist__card-img {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0;
+}
+
+.pricelist__card:hover .pricelist__card-info {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  opacity: 1;
+}
+
+.pricelist__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.pricelist__card-img--first {
+  background-image: linear-gradient(315deg, rgba(89, 92, 255, 0.4) 0%, #4884ee 74%, rgba(96, 239, 255, 0.4)), url("../img/pricelistimg/lab-gca00256fb_640.jpg");
+}
+
+.pricelist__card-img--second {
+  background-image: linear-gradient(315deg, rgba(155, 175, 217, 0.4) 0%, #4884ee 74%, rgba(16, 55, 131, 0.4)), url("../img/pricelistimg/surgery-ge8290558f_640.jpg");
+}
+
+.pricelist__card-img--third {
+  background-image: linear-gradient(315deg, rgba(111, 227, 225, 0.4) 0%, #4884ee 74%, rgba(82, 87, 229, 0.4)), url("../img/pricelistimg/mri-g1beb9cd04_640.jpg");
+}
+
+.pricelist__card-img-title {
+  font-size: 2.8rem;
+}
+
+.pricelist__card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+
+.pricelist__card-img-info i {
+  color: #00FFAB;
+  margin-right: 0.3em;
+}
+
+.pricelist__card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: 8px;
+  background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%, #06bcfb);
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.pricelist__card-info-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1em;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+}
+
+.pricelist__card-info-list {
+  margin: 0 auto;
+  width: 80%;
+  list-style: none;
+}
+
+.pricelist__card-info-list-title {
+  font-size: 2.6rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+
+.pricelist__card-info-list-item {
+  padding: 1em;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #00FFAB;
+}
+
+.contact__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__box-write {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.contact__box-write-label {
+  color: #0f57c4;
+  margin: 0.3em 0;
+}
+
+.contact__box-write .es {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 0;
+}
+
+.contact__box-write-title {
+  font-size: 2.5rem;
+  color: #06283d;
+  margin: 0.5em 0;
+}
+
+.contact__box-write .btn {
+  margin: 0.3em;
+  text-align: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  border-radius: 0px;
+  border: solid 1px black;
+}
+
+.contact__box-write input, .contact__box-write textarea {
+  padding: 0.5em;
+  font-size: 2rem;
+}
+
+.contact__box-write textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact__box-info {
+  padding: 1em;
+  background-color: #06283d;
+  color: #fff;
+}
+
+.contact__box-info-title {
+  font-size: 2.2rem;
+  margin: 1em 0.3em;
+}
+
+.contact__box-info-text {
+  margin: 0.5em 0;
+}
+
+.contact__box-info i {
+  font-size: 2rem;
+  color: #018fee;
+  padding: 0 0.3em;
+}
+
+.contact__box-map iframe {
+  height: 50vh;
+  width: 100%;
+}
+
+.foot {
+  background-color: #06283d;
+  color: white;
+}
+
+.foot__card {
+  margin: 1em 0;
+}
+
+.foot__card-aboutus {
+  text-align: center;
+  color: #dbd8d8;
+}
+
+.foot__card-social-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foot__card-social-body i {
+  font-size: 3rem;
+  margin: 0.2em 1em;
+  cursor: pointer;
+  -webkit-transition: color 0.5s, -webkit-transform 0.5s;
+  transition: color 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s;
+}
+
+.foot__card-social-body i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #018fee;
+}
+
+.foot__card-title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5em;
+  -webkit-text-decoration: underline 3px solid #018fee;
+          text-decoration: underline 3px solid #018fee;
+}
+
+.foot__bottom {
+  padding: 1em 0;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -329,36 +774,21 @@ body {
   .header__text .btn {
     font-size: 2rem;
   }
-  .service {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .service .section-heading {
+  .services .section-heading {
     font-size: 3rem;
   }
-  .service__card {
+  .services__card {
     margin: 2em auto;
     width: 80%;
     padding: 6em 0 0;
   }
-  .service__card-content-title {
+  .services__card-content-title {
     font-size: 2.5rem;
   }
-  .service__card-content-body {
+  .services__card-content-body {
     font-size: 1.8rem;
   }
-  .service__card-content-btn {
+  .services__card-content-btn {
     font-size: 1.6rem;
   }
 }
@@ -376,33 +806,219 @@ body {
   .header__text .btn {
     font-size: 2.5rem;
   }
-  .service {
+  .nav__link {
+    font-size: 4rem;
+    margin: 0.5em;
+  }
+  .services .section-heading {
+    font-size: 4.3rem;
+  }
+  .services .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .service__card {
+  .services__card {
     margin: 2em;
     width: 40%;
     padding: 7em 0 0;
   }
-  .service__card-content-title {
+  .services__card-content-title {
     font-size: 2.8rem;
   }
-  .service__card-content-body {
+  .services__card-content-body {
     font-size: 2rem;
   }
-  .service__card-content-btn {
+  .services__card-content-btn {
     font-size: 1.8rem;
+  }
+  .services__three {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .aboutus {
+    padding: 2em;
+  }
+  .aboutus__icon-box {
+    margin: 1em;
+    text-align: center;
+  }
+  .aboutus__icon-box i {
+    font-size: 4.5rem;
+  }
+  .aboutus__icon-box h5 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+  }
+  .aboutus__icon-box p {
+    font-size: 2rem;
+  }
+  .team {
+    padding-bottom: 2em;
+  }
+  .pricelist__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pricelist__card {
+    margin: 1em;
+    width: 45%;
+  }
+  .contact__box-write-title {
+    font-size: 3rem;
+  }
+  .contact__box-write input, .contact__box-write textarea {
+    font-size: 2.5rem;
+  }
+  .contact__box-write-label {
+    font-size: 2rem;
+  }
+  .contact__box-write .btn {
+    padding: 0.5em 2em;
+  }
+  .contact__box-info-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .contact__box-info-text {
+    font-size: 2rem;
+    margin: 1em;
+    text-align: center;
+  }
+  .foot__bottom {
+    font-size: 2.5rem;
+  }
+  .foot__card p {
+    font-size: 2rem;
+  }
+  .foot__card-title {
+    font-size: 3rem;
+  }
+  .foot__card-social-body i {
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 992px) {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 50px;
+  }
   .header__img {
     background-image: url("../img/header-big.jpg");
+  }
+  .nav__link {
+    font-size: 4.5rem;
+    margin: 0.5em;
+  }
+  .services .section-heading {
+    font-size: 5rem;
+  }
+  .aboutus {
+    padding: 3em;
+  }
+  .aboutus .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team__box {
+    margin-top: 2em;
+  }
+  .pricelist {
+    margin-bottom: 2em;
+  }
+  .pricelist__card {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services .section-heading {
+    font-size: 5.5rem;
+  }
+  .team {
+    height: 60vh;
+  }
+  .pricelist__card {
+    width: 30%;
+  }
+  .contact {
+    padding: 3em;
+    background-color: #efefef;
+  }
+  .contact .section-heading {
+    margin-bottom: 0.5em;
+  }
+  .contact__boxes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "write write info" "write write map";
+  }
+  .contact__box-write {
+    margin: 1em;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: write;
+  }
+  .contact__box-write .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em 0;
+  }
+  .contact__box-write-title {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .contact__box-write .btn {
+    font-size: 1.6em;
+    margin-top: 1.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact__box-map {
+    margin: 1em;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: map;
+  }
+  .contact__box-info {
+    margin: 1em;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: info;
+  }
+  .contact__box-info-title {
+    font-size: 3.5rem;
+  }
+  .contact__box-info-text {
+    font-size: 2.2rem;
+    margin: 3em 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

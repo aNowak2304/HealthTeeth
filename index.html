@@ -18,11 +18,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 <body>
 
     <header class="header">
-        <button class="hamburger hamburger--emphatic is-active" type="button">
+        <button class="hamburger hamburger--emphatic" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -30,8 +31,8 @@
 
         <nav class="nav">
             <a href="#services" class="nav__link">Services</a>
-            <a href="#opinions" class="nav__link">Opinions</a>
-            <a href="#price" class="nav__link">Pricelist</a>
+            <a href="#team" class="nav__link">Team</a>
+            <a href="#pricelist" class="nav__link">Pricelist</a>
             <a href="#contact" class="nav__link">Contact</a>
         </nav>
 
@@ -47,61 +48,352 @@
     </header>
 
     <main>
-        <section>
-            <h3 class="section-heading service">Services</h3>
+        <section class="services" id="services">
+            <h3 class="section-heading">Services</h3>
 
             <div class="wrapper">
 
-                    <div class="service__card service__one">
-                        <div class="service__card-content">
-                            <h5 class="service__card-content-title">orthodontics</h5>
-                            <p class="service__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Iure
-                                repellat in id facilis! Tempora, ad.</p>
-                            <button class="btn btn-animation service__card-content-btn">learn more</button>
+                <div class="services__card services__one">
+                    <div class="services__card-content">
+                        <h5 class="services__card-content-title">
+                            endodontics</h5>
+                        <p class="services__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure
+                            repellat in id facilis! Tempora, ad.</p>
+                        <button class="btn btn-animation services__card-content-btn btn-even">learn more</button>
+                    </div>
+                </div>
+
+                <div class="services__card services__two">
+                    <div class="services__card-content">
+                        <h5 class="services__card-content-title title-even">
+                            endodontics</h5>
+                        <p class="services__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure
+                            repellat in id facilis! Tempora, ad.</p>
+                        <button class="btn btn-animation services__card-content-btn btn-even">learn more</button>
+                    </div>
+                </div>
+
+                <div class="services__card services__three">
+                    <div class="services__card-content">
+                        <h5 class="services__card-content-title">
+                            Surgery</h5>
+                        <p class="services__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure
+                            repellat in id facilis! Tempora, ad.</p>
+                        <button class="btn btn-animation services__card-content-btn">learn more</button>
+                    </div>
+                </div>
+
+                <div class="services__card services__four">
+                    <div class="services__card-content">
+                        <h5 class="services__card-content-title title-even">implants</h5>
+                        <p class="services__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure
+                            repellat in id facilis! Tempora, ad.</p>
+                        <button class="btn btn-animation services__card-content-btn btn-even">learn more</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="aboutus">
+            <div class="wrapper">
+
+                <div class="aboutus__icon-box aboutus__icon-box-down">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h5>Awesome price</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="aboutus__icon-box">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h5>high quality service</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="aboutus__icon-box aboutus__icon-box-down">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h5>fast terms</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <h3 class="section-heading">Team</h3>
+
+            <div class="wrapper">
+                <div class="team__boxes">
+
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/zd.jpg" alt="" class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Jakub Braszczok</h5>
+                            <p class="team__box-content-text">Security guard</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="service__card service__two">
-                        <div class="service__card-content">
-                            <h5 class="service__card-content-title">
-                                endodontics</h5>
-                            <p class="service__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Iure
-                                repellat in id facilis! Tempora, ad.</p>
-                            <button class="btn btn-animation service__card-content-btn">learn more</button>
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/karo.jpg" alt="" class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Karolina Wiśniewska</h5>
+                            <p class="team__box-content-text">Nurse</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="service__card service__three">
-                        <div class="service__card-content">
-                            <h5 class="service__card-content-title">
-                                radiology</h5>
-                            <p class="service__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Iure
-                                repellat in id facilis! Tempora, ad.</p>
-                            <button class="btn btn-animation service__card-content-btn">learn more</button>
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/images.jpg" alt="" class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Elżbieta Górna</h5>
+                            <p class="team__box-content-text">
+                                receptionist</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="service__card service__four">
-                        <div class="service__card-content">
-                            <h5 class="service__card-content-title">implants</h5>
-                            <p class="service__card-content-body">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Iure
-                                repellat in id facilis! Tempora, ad.</p>
-                            <button class="btn btn-animation service__card-content-btn">learn more</button>
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/lekarz-online-Dr-Mateusz-Pankiewicz.jpg" alt=""
+                                class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Mateusz Bodzio</h5>
+                            <p class="team__box-content-text">Beginner Dentist</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/668ktkqTURBXy8zM2NjYzk2NDQ3ZWEzOTM5NzU3N2FiZmRiODk5Y2Y5My5qcGVnkZMFzQMgzQMg.jpg"
+                                alt="" class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Andronika Wajda</h5>
+                            <p class="team__box-content-text">Dentist boss</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__box">
+                        <div class="team__box-head">
+                            <span class="team__box-head-overlay"></span>
+                            <img src="./img/teamimg/110d1cbe5dab9520e7f0b422db6ada5a_large.jpg" alt=""
+                                class="team__box-head-img">
+                        </div>
+                        <div class="team__box-content">
+                            <h5 class="team__box-content-title">Janusz Strzemiączko</h5>
+                            <p class="team__box-content-text">Professional dentist</p>
+                            <div class="team__box-content-icons">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-square"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pricelist" id="pricelist">
+            <h2 class="section-heading">Pricelist</h2>
+            <div class="wrapper">
+                <div class="pricelist__cards">
+
+                    <div class="pricelist__card" onclick="void(0)">
+
+                        <div class="pricelist__card-img pricelist__card-img--first">
+                            <h3 class="pricelist__card-img-title">Diagnostics & Prophylactics</h3>
+                            <p class="pricelist__card-img-info"><i class="fa-solid fa-right-from-bracket"></i> More
+                                information</p>
+                        </div>
+
+
+                        <div class="pricelist__card-info">
+                            <h3 class="pricelist__card-info-title">Diagnostics</h3>
+                            <ul class="pricelist__card-info-list">
+                                <li class="pricelist__card-info-list-item">Dental consultation 30$</li>
+                                <li class="pricelist__card-info-list-item">X-ray 50$</li>
+                                <h3 class="pricelist__card-info-list-title">Prophylactics</h3>
+                                <li class="pricelist__card-info-list-item">Hygienic package 5$</li>
+                                <li class="pricelist__card-info-list-item">Fluoridation 10$</li>
+                                <li class="pricelist__card-info-list-item">Decalcification 25$</li>
+                                <li class="pricelist__card-info-list-item">Removal of deposits 100$</li>
+                                <li class="pricelist__card-info-list-item">Overlay whitening 200$</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="pricelist__card" onclick="void(0)">
+
+                        <div class="pricelist__card-img pricelist__card-img--second">
+                            <h3 class="pricelist__card-img-title">Orthodontics & Implants</h3>
+                            <p class="pricelist__card-img-info"><i class="fa-solid fa-right-from-bracket"></i> More
+                                information</p>
+                        </div>
+
+
+                        <div class="pricelist__card-info">
+                            <h3 class="pricelist__card-info-title">Orthodontics</h3>
+                            <ul class="pricelist__card-info-list">
+                                <li class="pricelist__card-info-list-item">Orthodontic consultation 25$</li>
+                                <li class="pricelist__card-info-list-item">Orthodontic treatment plan 50$</li>
+                                <li class="pricelist__card-info-list-item">Fixed metal braces 1000$</li>
+                                <li class="pricelist__card-info-list-item">Fixed aesthetic braces 1500$</li>
+                                <h3 class="pricelist__card-info-list-title">Prophylactics</h3>
+                                <li class="pricelist__card-info-list-item">Implantology consultation 10$</li>
+                                <li class="pricelist__card-info-list-item">Radiological diagnostics 250$</li>
+                                <li class="pricelist__card-info-list-item">Implant placement 3000$</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="pricelist__card" onclick="void(0)">
+
+                        <div class="pricelist__card-img pricelist__card-img--third">
+                            <h3 class="pricelist__card-img-title">Surgery & Endodontics</h3>
+                            <p class="pricelist__card-img-info"><i class="fa-solid fa-right-from-bracket"></i> More
+                                information</p>
+                        </div>
+
+
+                        <div class="pricelist__card-info">
+                            <h3 class="pricelist__card-info-title">Surgery</h3>
+                            <ul class="pricelist__card-info-list">
+                                <li class="pricelist__card-info-list-item">Tooth removal 50$</li>
+                                <li class="pricelist__card-info-list-item">Wisdom tooth removal 150$</li>
+                                <h3 class="pricelist__card-info-list-title">Endodontics</h3>
+                                <li class="pricelist__card-info-list-item">Fluoridation 15$</li>
+                                <li class="pricelist__card-info-list-item">Decalcification 30$</li>
+                                <li class="pricelist__card-info-list-item">Earbud 55$</li>
+                                <li class="pricelist__card-info-list-item">Removal of deposits 125$</li>
+                                <li class="pricelist__card-info-list-item">Root canal treatment 300$</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h5 class="section-heading">Contact us</h5>
+            <div class="wrapper">
+                <div class="contact__boxes">
+
+                    <div class="contact__box contact__box-write">
+                        <h5 class="contact__box-write-title">Send a Message</h5>
+
+                        <div class="card">
+                            <label for="name" class="contact__box-write-label">First Name:</label>
+                            <input type="text" class="contact__box-write-label" id="name">
+                        </div>
+
+                        <div class="card">
+                            <label for="name" class="contact__box-write-label">Last Name:</label>
+                            <input type="text" class="contact__box-write-label" id="name">
+                        </div>
+
+
+                        <div class="card">
+                            <label for="mail" class="contact__box-write-label">Email:</label>
+                            <input type="text" class="contact__box-write-label" id="name">
+                        </div>
+
+                        <div class="card"><label for="mobile" class="contact__box-write-label">Mobile:</label>
+                            <input type="text" class="contact__box-write-label" id="name">
+                        </div>
+
+                        <label for="msg" class="contact__box-write-label">Message:</label>
+                        <textarea id="msg" class="contact__box-write-label"></textarea>
+
+                        <div class="btn btn-animation">Send</div>
+                    </div>
+
+                    <div class="contact__box contact__box-info">
+                        <h5 class="contact__box-info-title">Contact info</h5>
+                        <p class="contact__box-info-text"><i class="fa-solid fa-location-dot"></i> Smolna 11, Poland,
+                            Warsaw</p>
+                        <p class="contact__box-info-text"><i class="fa-solid fa-envelope"></i> loremipsum@dolar.com</p>
+                        <p class="contact__box-info-text"><i class="fa-solid fa-phone"></i> +48 888 888 888</p>
+                    </div>
+
+                    <div class="contact__box contact__box-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.4980235258777!2d18.966334734605905!3d50.22660024561156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce9659862acb%3A0x9ae71798a27b4c8c!2sSmolna%2011%2C%2040-708%20Katowice!5e0!3m2!1spl!2spl!4v1657486731773!5m2!1spl!2spl"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="foot">
+        <div class="wrapper">
 
+            <div class="foot__card foot__card-aboutus">
+                <h5 class="foot__card-title">About us</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci obcaecati ratione dicta minima
+                    voluptas! </p>
+            </div>
+
+            <div class="foot__card foot__card-social">
+                <h5 class="foot__card-title">Social Media</h5>
+                <div class="foot__card-social-body"><i class="fa-brands fa-instagram"></i> <i
+                        class="fa-brands fa-twitter-square"></i> <i class="fa-brands fa-facebook-square"></i> <i
+                        class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="foot__bottom"> &copy; <span class="footer__year"></span> Dental Teeth </p>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
