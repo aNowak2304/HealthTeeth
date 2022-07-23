@@ -590,6 +590,10 @@ body {
   letter-spacing: 2px;
 }
 
+.pricelist__card-info-header {
+  margin-top: 1em;
+}
+
 .pricelist__card-info-list {
   margin: 0 auto;
   width: 80%;
@@ -599,13 +603,13 @@ body {
 .pricelist__card-info-list-title {
   font-size: 2.6rem;
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   letter-spacing: 2px;
 }
 
 .pricelist__card-info-list-item {
   padding: 1em;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   border-bottom: 1px solid #00FFAB;
 }
 
@@ -638,7 +642,7 @@ body {
   margin: 0.3em 0;
 }
 
-.contact__box-write .es {
+.contact__box-write .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +650,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em 0;
 }
 
 .contact__box-write-title {
